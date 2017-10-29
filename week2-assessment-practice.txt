@@ -1,0 +1,80 @@
+1. Name the data type.
+    null - null
+    false - boolean
+    `[]` - array
+    `{}` - object
+    2 - number
+    '4' - string
+
+2. What flex property causes flex items to be laid out vertically or horizontally?
+
+flex-direction
+
+3. What method would you use to find all elements in the DOM with a class of 'delete'?
+
+document.getElementsByClassName("delete");
+
+4. Write a media query that increases the font size of all `p` tags by 25% on viewport sizes larger than 480px.
+
+@media (min-width: 480px) { 
+	p {
+		font-size: 125%;
+	}
+}
+
+5. Write the CSS selector for all buttons elements with a class of "action-button".
+
+button.action-button {}
+
+6. What CSS property would we modify to change an element from `block` to `inline`.
+
+display
+
+7. Declare a function called `addNumber` that accepts 2 parameters. Inside the code block add the numbers together and log it to the console. Call the function 2 times with different arguments.
+
+function addNumber(x, y) {
+	var numberSum = x + y;
+	console.log(numberSum);
+}
+
+addNumber(3, 7);
+addNumber(4, 3);
+
+8. Create a for loop that logs all even integers between 2 and 18 (inclusive).
+
+for (var i = 1; i <= 18; i++) {
+	if (i % 2 == 0) {
+		console.log(i);
+	}
+}
+
+BETTER:
+
+for (var 1 = 2; i <= 18; 1+=2) {
+	console.log(i);
+}
+
+9. Add each GCGRFB student's name to an array via `.push()`. Then log each name to the console using `.forEach`.
+
+var studentNames = [];
+studentNames.push("Joey", "Laila", "Brennan", "Kennan", "Nicole", "Patrick", "Sloth", "Brandon", "Jillane", "Holly");
+studentNames.forEach(function(student) {
+	console.log(student);
+});
+
+10. Create 2 objects called `grant` and `hero` that have properties of attackPower and health. Declare an array and initialize it to include `grant` and `hero`.
+
+var grant = {
+	attackPower: 0,
+	health: 0
+};
+
+var hero = {
+	attackpower: 0,
+	health: 0
+};
+
+var players = [grant, hero];
+
+11. Create an HTML document with a button that "flips a coin" and displays the result of the flip to the user. Add an input box where a user can enter a guess of "heads" or "tails" and display whether or not the user guessed correctly. The form should be centered horizontally on the page, have some vertical padding or margin from the top and have a different background than the rest of the page.
+
